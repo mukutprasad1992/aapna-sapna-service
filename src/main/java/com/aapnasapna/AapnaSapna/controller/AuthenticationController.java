@@ -70,6 +70,7 @@ public class AuthenticationController {
 		newUser.setCountry(user.getCountry());
 		newUser.setEnabled(user.getEnabled());
 		newUser.setRole(user.getRole());
+		// Add comment
 		return ResponseEntity.ok(myAppUserDetailsService.register(newUser));
 	}
 }
